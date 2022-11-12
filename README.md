@@ -4,7 +4,7 @@ A simple checkerboard implementation using React and TypeScript. The application
 ## App Interface
 The classic version of the chessboard was chosen. If desired, you can add styles with other variants of chess pieces.
 
-![alt text](https://github.com/barkovmihail/chessBoard/public/template.png)
+![alt text](https://github.com/barkovmihail/chessBoard/blob/main/public/template.png)
 
 ### License
 [MIT licensed](./LICENSE).
