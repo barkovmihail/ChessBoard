@@ -1,0 +1,59 @@
+.board {
+    margin: 40px;
+}
+
+.cells {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cells > .cell {
+	flex-grow: 1;
+	width: 12.5%;
+    height: 12.5%;
+
+    background-color: #f0d9b5;
+}
+
+.cells div:nth-child(-2n+8), 
+.cells div:nth-child(8) ~ div:nth-child(-2n+15), 
+.cells div:nth-child(16) ~ div:nth-child(-2n+24),
+.cells div:nth-child(24) ~ div:nth-child(-2n+31),
+.cells div:nth-child(32) ~ div:nth-child(-2n+40),
+.cells div:nth-child(40) ~ div:nth-child(-2n+47),
+.cells div:nth-child(48) ~ div:nth-child(-2n+56),
+.cells div:nth-child(56) ~ div:nth-child(-2n+63) {
+    background-color: #b58862;
+}
+
+.numbers {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: -15px;
+}
+
+.numbers > div {
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+
+.chars {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -20px;
+}
+
+.chars > div {
+	flex-grow: 1;
+    width: 12.5%;
+}
+
+
